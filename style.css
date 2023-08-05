@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: thistle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 500px;
+  height: 700px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+  background: #000000;
+  overflow: hidden;
+}
+
+form input {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  text-align: right;
+  pointer-events: none;
+}
+
+.screen {
+  font-size: 4rem;
+  padding-right: 60px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+button {
+  margin: 5px 10px;
+  border: 1px solid transparent;
+  width: 80px;
+  height: 80px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-yellow {
+  background-color: #f69906;
+  color: white;
+}
+
+.btn-grey {
+  background-color: #303130;
+  color: whitesmoke;
+}
+
+.btn-equal {
+  background-color: #f69906;
+  color: white;
+}
+
+.btn-clear {
+  background-color: #a1a0a1;
+  color: black;
+}
+
+.show1,
+.show2 {
+  background-color: #a1a0a1;
+  color: black;
+}
+
+.zero {
+  width: 190px;
+  border-radius: 50px;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .screen {
+    padding-right: 60px;
+    height: 350px;
+  }
+  button {
+    width: 65px;
+    height: 65px;
+  }
+
+  .zero {
+    width: 160px;
+  }
+}
